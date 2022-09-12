@@ -222,7 +222,7 @@ class Cell {
     this.context = area.context;
     this.x = x;
     this.y = y;
-    this.live = Math.random() > chance;
+    this.live = Math.floor(Math.random() > chance);
   }
 
   draw() {
