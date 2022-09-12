@@ -46,7 +46,7 @@ const greenDot = document.getElementById('live-green-dot');
 
 /**Create variables--------------------------------------------------------- */
 
-/**Create controls */
+/**Create configs */
 var interval = 80; /**Set frame interval in milliseconds */
 var chance = 0.5 /**Set initial seed probability */
 
@@ -57,6 +57,10 @@ var bgColor = '#121212';
 /**Set grid dimensions */
 var gridRows = 200;
 var gridCols = 200;
+
+/**Set rules */
+var rule1 = 2;
+var rule2 = 3;
 
 /**Create timestamps */
 var ts;
@@ -270,12 +274,12 @@ function cEnv() {
         cLivz(x + 1, y + 1);
 
       /**Apply Conway's rules */
-      if (n == 2) {
+      if (n == rule1) {
 
         cells[cToA(x, y)].is = cells[cToA(x, y)].live;
       }
 
-      else if (n == 3) {
+      else if (n == rule2) {
 
         cells[cToA(x, y)].is = true;
       }
