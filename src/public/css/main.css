@@ -40,10 +40,12 @@ a {
   border: 0.1px solid var(--c2);
   display: grid;
   margin: auto;
+  max-width: 100%;
+  padding: 10px;
 }
 #grid-container canvas {
   background-color: var(--c1);
-  max-height: 96vh;
+  max-height: 94vh;
   max-width: 100%;
   overflow-x: visible;
 }

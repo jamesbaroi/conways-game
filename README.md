@@ -9,7 +9,7 @@ Conway's cellular automation game of life.
   - Latency
 - Configurable settings
   - Grid size (upto 200 x 200)
-  - Initial seed probability
+  - Seed probability
   - Frame interval
   - Colors
 
