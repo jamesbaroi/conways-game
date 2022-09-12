@@ -13,6 +13,6 @@ Conway's cellular automation game of life.
   - Frame interval
   - Colors
 
-  ## Set runtime variables
-      HOST=your-server-host
-      PORT=your-server-port
+## Set runtime variables
+    HOST=your-server-host
+    PORT=your-server-port
