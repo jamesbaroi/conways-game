@@ -1,2 +1,6 @@
 # Conways Game
-Conway's game of life.
+Conway's cellular automation game of life.
+
+## Parameters
+
+- 
