@@ -1,0 +1,47 @@
+<!--Output performance metrics-->
+<table>
+  <thead>
+    <tr>
+      <th>Frame</th>
+      <th>Rate</th>
+      <th>Elapsed</th>
+      <th>Latency</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr id="metrics-container">
+      <td id="frame-out"></td>
+      <td id="rate-out"></td>
+      <td id="elapsed-out"></td>
+      <td id="latency-out"></td>
+    </tr>
+  </tbody>
+</table>
+<!--Output count-->
+<table id="count-container">
+  <col style="width:25%">
+  <col style="width:75%">
+  <thead>
+    <tr>
+      <th>
+        <span id="live-green-dot">&#8226;</span>
+        <span>Live</span>
+      </th>
+      <th>Count</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        <!--Display percentage graph-->
+        <div id="graph-container"></div>
+        <div id="percent-live-out"></div>
+      </td>
+      <td>
+        <span id="count-alive-out"></span>
+        <span class="divider">/</span>
+        <span id="count-total-out"></span>
+      </td>
+    </tr>
+  </tbody>
+</table>

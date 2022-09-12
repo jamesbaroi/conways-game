@@ -1,0 +1,78 @@
+<!--Display configuration form-->
+<form id="config" name="config">
+  <legend>Configure</legend>
+  <fieldset>
+    <div class="input">
+      <label for="chance">Seed Probabiligy</label>
+      <input id="chance"
+      name="chance"
+      type="number"
+      min="0"
+      max="1"
+      step="0.01"
+      value="0.5">
+    </div>
+    <div class="input">
+      <label for="interval">Interval / milliseconds</label>
+      <input id="interval"
+      name="interval"
+      type="number"
+      min="1"
+      step="1"
+      value="80">
+    </div>
+    <div class="input">
+      <label for="grid-y">Grid X Width</label>
+      <input id="grid-y"
+      name="grid-y"
+      type="number"
+      min="10"
+      max="200"
+      step="10"
+      value="200">
+    </div>
+    <div class="input">
+      <label for="grid-x">Grid Y Height</label>
+      <input id="grid-x"
+      name="grid-x"
+      type="number"
+      min="10"
+      max="200"
+      step="10"
+      value="200">
+    </div>
+  </fieldset>
+  <legend>Style</legend>
+  <fieldset>
+    <div class="input">
+      <label for="px-color">Color</label>
+      <input id="px-color"
+      name="px-color"
+      type="color"
+      value="#5F6368">
+    </div>
+    <div class="input">
+      <label for="bg-color">Background</label>
+      <input id="bg-color"
+      name="bg-color"
+      type="color"
+      value="#121212">
+    </div>
+    <div class="input">
+      <input id="reset"
+      type="reset"
+      value="Restore Default Settings">
+    </div>
+  </fieldset>
+  <div id="btns">
+    <button type="button" id="reload-btn" onclick="area.reload()">
+      Restart
+    </button>
+    <button type="button" id="pause-btn" onclick="area.pause()">
+      Pause
+    </button>
+    <button type="button" id="resume-btn" onclick="area.resume()">
+      Resume
+    </button>
+  </div>
+</form>

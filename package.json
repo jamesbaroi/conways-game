@@ -1,0 +1,22 @@
+{
+  "name": "conways-game",
+  "version": "1.0.0",
+  "description": "Conway's game of life",
+  "main": "src/app.js",
+  "type": "module",
+  "scripts": {
+    "start": "cross-env NODE_ENV=production node src/app.js",
+    "test": "cross-env NODE_ENV=development pm2 start src/app.js --watch"
+  },
+  "author": "James A. Baroi",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.0.2",
+    "express": "^4.18.1",
+    "express-handlebars": "^6.0.6",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3"
+  }
+}
