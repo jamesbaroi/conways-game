@@ -1,4 +1,4 @@
-# Conways Game
+# Conway's Game
 Conway's cellular automation game of life. Try out different configurations and
 appreciate beautiful mathematics.
 
