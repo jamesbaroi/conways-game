@@ -146,7 +146,7 @@ var area = {
 
     /**Set configs */
     interval = Number(cfgInterval.value);
-    chance = Number(cfgChance.value);
+    chance = Number(cfgChance.value/100);
     gridCols = Number(cfgGridY.value);
     gridRows = Number(cfgGridX.value);
     pxColor = cfgPxColor.value;

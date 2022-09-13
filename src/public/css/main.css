@@ -180,6 +180,11 @@ label {
   margin: 10px 0 0;
 }
 
+.units {
+  font-size: 1em;
+  text-align: right;
+}
+
 input {
   background-color: var(--c2);
   border-color: transparent;

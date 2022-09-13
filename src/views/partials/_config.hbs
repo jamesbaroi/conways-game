@@ -3,23 +3,27 @@
   <legend>Configure</legend>
   <fieldset>
     <div class="input">
-      <label for="chance">Seed Probability</label>
+      <label for="chance">Maximum Seed Probability</label>
+      <label class="units">%</label>
       <input id="chance"
       name="chance"
       type="number"
       min="0"
-      max="1"
-      step="0.01"
-      value="0.5">
+      max="100"
+      step="1"
+      value="50">
     </div>
     <div class="input">
-      <label for="interval">Interval / milliseconds</label>
-      <input id="interval"
-      name="interval"
-      type="number"
-      min="1"
-      step="1"
-      value="80">
+      <label for="interval">Frame Interval</label>
+      <label class="units">
+        <span>ms</span>
+        <input id="interval"
+        name="interval"
+        type="number"
+        min="1"
+        step="1"
+        value="80">
+      </label>
     </div>
     <div class="input">
       <label for="grid-y">Grid X Width</label>
