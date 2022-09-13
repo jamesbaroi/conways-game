@@ -181,7 +181,8 @@ label {
 }
 
 .units {
-  font-size: 1em;
+  font-size: 0.8em;
+  padding-right: 10px;
   text-align: right;
 }
 

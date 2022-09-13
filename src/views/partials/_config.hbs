@@ -4,63 +4,98 @@
   <fieldset>
     <div class="input">
       <label for="chance">Maximum Seed Probability</label>
-      <label class="units">%</label>
-      <input id="chance"
-      name="chance"
-      type="number"
-      min="0"
-      max="100"
-      step="1"
-      value="50">
+      <span>
+        <input id="chance"
+        name="chance"
+        type="number"
+        min="0"
+        max="100"
+        step="1"
+        value="50"><span class="units">%&#160;</span>
+      </span>
     </div>
     <div class="input">
       <label for="interval">Frame Interval</label>
-      <label class="units">
-        <span>ms</span>
+      <span>
         <input id="interval"
         name="interval"
         type="number"
         min="1"
         step="1"
-        value="80">
-      </label>
+        value="80"><span class="units">ms</span>
+      </span>
     </div>
     <div class="input">
       <label for="grid-y">Grid X Width</label>
-      <input id="grid-y"
-      name="grid-y"
-      type="number"
-      min="10"
-      max="200"
-      step="10"
-      value="200">
+      <span>
+        <input id="grid-y"
+        name="grid-y"
+        type="number"
+        min="10"
+        max="200"
+        step="10"
+        value="200"><span class="units">px</span>
+      </span>
     </div>
     <div class="input">
       <label for="grid-x">Grid Y Height</label>
-      <input id="grid-x"
-      name="grid-x"
-      type="number"
-      min="10"
-      max="200"
-      step="10"
-      value="200">
+      <span>
+        <input id="grid-x"
+        name="grid-x"
+        type="number"
+        min="10"
+        max="200"
+        step="10"
+        value="200"><span class="units">px</span>
+      </span>
+    </div>
+  </fieldset>
+  <legend>Rule</legend>
+  <fieldset>
+    <div class="input">
+      <label for="rule1">1. Do nothing if live neighbors =</label>
+      <span>
+        <input id="rule1"
+        name="rule1"
+        type="number"
+        min="0"
+        max="9"
+        step="1"
+        value="2"><span class="units">&#160;&#160;</span>
+      </span>
+    </div>
+    <div class="input">
+      <label for="rule2">2. Bring to life if live neighbors =</label>
+      <span>
+        <input id="rule2"
+        name="rule2"
+        type="number"
+        min="0"
+        max="9"
+        step="1"
+        value="3"><span class="units">&#160;&#160;</span>
+      </span>
     </div>
   </fieldset>
   <legend>Style</legend>
   <fieldset>
     <div class="input">
       <label for="px-color">Color</label>
-      <input id="px-color"
-      name="px-color"
-      type="color"
-      value="#5F6368">
+      <span>
+        <input id="px-color"
+        name="px-color"
+        type="color"
+        value="#5F6368"><span class="units">&#160;&#160;</span>
+      </span>
     </div>
     <div class="input">
       <label for="bg-color">Background</label>
-      <input id="bg-color"
-      name="bg-color"
-      type="color"
-      value="#121212">
+      <span>
+        <input id="bg-color"
+        name="bg-color"
+        type="color"
+        value="#121212"><span class="units">&#160;&#160;</span>
+      </span>
     </div>
     <div class="input">
       <input id="reset"

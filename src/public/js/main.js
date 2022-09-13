@@ -34,6 +34,8 @@ const cfgGridX = document.getElementById('grid-x');
 const cfgGridY = document.getElementById('grid-y');
 const cfgPxColor = document.getElementById('px-color');
 const cfgBgColor = document.getElementById('bg-color');
+const cfgRule1 = document.getElementById('rule1');
+const cfgRule2 = document.getElementById('rule2');
 
 /**Get buttons */
 const btns = document.getElementById('btns');
@@ -149,6 +151,8 @@ var area = {
     chance = Number(cfgChance.value/100);
     gridCols = Number(cfgGridY.value);
     gridRows = Number(cfgGridX.value);
+    rule1 = Number(cfgRule1.value);
+    rule2 = Number(cfgRule2.value);
     pxColor = cfgPxColor.value;
     bgColor = cfgBgColor.value;
 
