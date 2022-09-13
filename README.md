@@ -16,6 +16,9 @@ appreciate beautiful mathematics.
   - Game rules
   - Colors
 
+## Screen Shot
+  <img src="/img/conways-game-screen-shot.jpg" alt="Conway's Game Screen Shot">
+
 ## Set runtime variables
     HOST=your-server-host
     PORT=your-server-port
