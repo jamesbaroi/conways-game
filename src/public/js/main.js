@@ -53,7 +53,7 @@ var interval = 80; /**Set frame interval in milliseconds */
 var chance = 0.5 /**Set max seed probability */
 
 /**Set colors */
-var pxColor = '#5F6368';
+var pxColor = '#557AAA';
 var bgColor = '#121212';
 
 /**Set grid dimensions */
