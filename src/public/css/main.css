@@ -16,7 +16,8 @@ body {
   font-size: 16px;
   line-height: 16px;
   margin: auto;
-  padding: 10px 10px 55px;
+  max-width: 912.17px;
+  padding: 10px 10px 65px;
 }
 
 a {
@@ -50,6 +51,16 @@ a {
   overflow-x: visible;
 }
 
+#gh {
+  border-bottom: 0.1px solid var(--c2);
+  border-left: 0.1px solid var(--c2);
+  border-right: 0.1px solid var(--c2);
+  color: var(--c2);
+  font-size: 0.6em;
+  line-height: 10px;
+  text-align: center;
+}
+
 /**Information---------------------------------------------------------------*/
 #information {
   display: flex;
@@ -71,15 +82,7 @@ a {
   text-align: right;
 }
 
-@media (hover: hover) {
-  #reference:hover {
-    color: var(--c3);
-  }
-  #grid-dimensions-out:hover {
-    color: var(--c3);
-  }
-}
-/**out--------------------------------------------------------------------*/
+/**Output--------------------------------------------------------------------*/
 table, th, td {
   border: 0.1px solid var(--c2);
   border-collapse: collapse;
@@ -102,12 +105,8 @@ td {
   color: var(--c5);
 }
 
-#count-container {
-  width: auto;
-}
 #count-container th {
   list-style-position: inside;
-  width: auto;
 }
 #count-container td {
   text-align: center;
@@ -121,12 +120,13 @@ td {
   font-size: 1.4em;
 }
 
-.divider {
+#count-total-out {
   color: var(--c3);
 }
 
-#count-total-out {
+.divider {
   color: var(--c3);
+  font-size: 0.8em;
 }
 
 #graph-container {
@@ -166,68 +166,39 @@ legend {
 
 fieldset {
   border: none;
-  padding: 0 0 10px;
+  padding: 10px;
 }
 
 .input {
   display: flex;
   justify-content: space-between;
+  margin-bottom: auto;
 }
 
 label {
+  border: none;
   font-size: 0.8em;
-  padding-left: 10px;
-  margin: 10px 0 0;
 }
 
 .units {
+  border: none;
   font-size: 0.8em;
-  padding-right: 10px;
+  padding: 0 10px;
   text-align: right;
 }
 
 input {
   background-color: var(--c2);
-  border-color: transparent;
-  color: var(--c3);
-  border-radius: 2px;
   border: none;
-  font-size: 0.8em;
-  margin: 10px 10px 0 0;
-  outline: none;
-  padding: 4px 0;
-  text-align: right;
-  width: 80px;
-}
-
-#px-color, #bg-color {
-  border: 0.1px solid var(--c2);
-  border-radius: 2px;
-  height: 23px;
-  padding: 0;
-  outline: 0;
-}
-
-#reset {
-  background-color: var(--c1);
   color: var(--c3);
-  cursor: pointer;
-  font-family: monospace;
+  border-radius: 2px;
   font-size: 0.8em;
-  margin: 10px 0 0 10px;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
+  margin: 0 0 10px;
+  padding: 4px 5px;
+  text-align: left;
+  width: 60px;
 }
 
-@media (hover: hover) {
-  #reset:hover {
-    color: var(--c4);
-  }
-  #reset:active {
-    color: var(--c2);
-  }
-}
 input::-webkit-inner-spin-button {
   margin-left: 10px;
 }
@@ -236,18 +207,28 @@ input[type=number] {
   -moz-appearance: textfield;
 }
 
-input::-moz-color-swatch {
-  border: none;
-  border-color: transparent;
-  outline: none;
-}
-
 input[type=color]::-webkit-color-swatch-wrapper {
   padding: 0;
 }
 
 input[type=color]::-webkit-color-swatch {
   border: none;
+}
+
+input::-moz-color-swatch {
+  border: none;
+  border-color: transparent;
+  outline: none;
+}
+
+#px-color, #bg-color {
+  border: 0.1px solid var(--c2);
+  border-radius: 2px;
+  box-sizing: border-box;
+  height: 23px;
+  margin: 0 0 10px;
+  padding: 0;
+  width: 23px;
 }
 
 /**Buttons-------------------------------------------------------------------*/
@@ -260,7 +241,7 @@ input[type=color]::-webkit-color-swatch {
   bottom: 10px;
 }
 
-button {
+button, #reset {
   background-color: var(--c2);
   border-left: 0.1px solid var(--c3);
   border-top: 0.1px solid var(--c3);
@@ -271,27 +252,13 @@ button {
   cursor: pointer;
   font-family: monospace;
   font-weight: 600;
+  height: 35px;
   outline: none;
   padding: 8px 10px 10px;
+  text-align: center;
   width: 100px;
 }
 
-@media (hover: hover) {
-  button:hover {
-    background-color: var(--c3);
-    border-left-color: var(--c4);
-    border-top-color: var(--c4);
-    border-bottom-color: var(--c1);
-    color: var(--c4);
-  }
-  button:active {
-    background-color: var(--c2);
-    border-left: none;
-    border-top-color: var(--c2);
-    border-bottom: none;
-    color: var(--c5);
-  }
-}
 /**Scrollbar-----------------------------------------------------------------*/
 body::-webkit-scrollbar-thumb {
   background: var(--c1);
@@ -307,6 +274,32 @@ body::-webkit-scrollbar {
   width: 10px;
 }
 
-body::-webkit-scrollbar-thumb:hover {
-  background: var(--c5);
+/**Hovers--------------------------------------------------------------------*/
+@media (hover: hover) {
+  #gh:hover {
+    color: var(--c3);
+  }
+  #reference:hover {
+    color: var(--c3);
+  }
+  #grid-dimensions-out:hover {
+    color: var(--c3);
+  }
+  button:hover, #reset:hover {
+    background-color: var(--c3);
+    border-left-color: var(--c4);
+    border-top-color: var(--c4);
+    border-bottom-color: var(--c1);
+    color: var(--c4);
+  }
+  button:active, #reset:active {
+    background-color: var(--c2);
+    border-left: none;
+    border-top-color: var(--c2);
+    border-bottom: none;
+    color: var(--c5);
+  }
+  body::-webkit-scrollbar-thumb:hover {
+    background: var(--c5);
+  }
 }

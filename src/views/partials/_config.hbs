@@ -1,28 +1,29 @@
-<!--Display configuration form-->
 <form id="config" name="config">
   <legend>Configure</legend>
   <fieldset>
     <div class="input">
       <label for="chance">Maximum Seed Probability</label>
       <span>
+        <span class="units">%</span>
         <input id="chance"
         name="chance"
         type="number"
         min="0"
         max="100"
         step="1"
-        value="50"><span class="units">%&#160;</span>
+        value="50">
       </span>
     </div>
     <div class="input">
       <label for="interval">Frame Interval</label>
       <span>
+        <span class="units">ms</span>
         <input id="interval"
         name="interval"
         type="number"
         min="1"
         step="1"
-        value="80"><span class="units">ms</span>
+        value="80">
       </span>
     </div>
     <div class="input">
@@ -34,7 +35,7 @@
         min="10"
         max="200"
         step="10"
-        value="200"><span class="units">px</span>
+        value="200">
       </span>
     </div>
     <div class="input">
@@ -46,26 +47,14 @@
         min="10"
         max="200"
         step="10"
-        value="200"><span class="units">px</span>
+        value="200">
       </span>
     </div>
   </fieldset>
   <legend>Rule</legend>
   <fieldset>
     <div class="input">
-      <label for="rule1">1. Do nothing if live neighbors =</label>
-      <span>
-        <input id="rule1"
-        name="rule1"
-        type="number"
-        min="0"
-        max="9"
-        step="1"
-        value="2"><span class="units">&#160;&#160;</span>
-      </span>
-    </div>
-    <div class="input">
-      <label for="rule2">2. Bring to life if live neighbors =</label>
+      <label for="rule2">Bring to life if neighbors =</label>
       <span>
         <input id="rule2"
         name="rule2"
@@ -73,7 +62,19 @@
         min="0"
         max="9"
         step="1"
-        value="3"><span class="units">&#160;&#160;</span>
+        value="3">
+      </span>
+    </div>
+    <div class="input">
+      <label for="rule1">Do nothing if neighbors =</label>
+      <span>
+        <input id="rule1"
+        name="rule1"
+        type="number"
+        min="0"
+        max="9"
+        step="1"
+        value="2">
       </span>
     </div>
   </fieldset>
@@ -81,29 +82,21 @@
   <fieldset>
     <div class="input">
       <label for="px-color">Color</label>
-      <span>
-        <input id="px-color"
-        name="px-color"
-        type="color"
-        value="#5F6368"><span class="units">&#160;&#160;</span>
-      </span>
+      <input id="px-color"
+      name="px-color"
+      type="color"
+      value="#5F6368">
     </div>
     <div class="input">
       <label for="bg-color">Background</label>
-      <span>
-        <input id="bg-color"
-        name="bg-color"
-        type="color"
-        value="#121212"><span class="units">&#160;&#160;</span>
-      </span>
-    </div>
-    <div class="input">
-      <input id="reset"
-      type="reset"
-      value="Restore Default Settings">
+      <input id="bg-color"
+      name="bg-color"
+      type="color"
+      value="#121212">
     </div>
   </fieldset>
   <div id="btns">
+    <input id="reset" type="reset" value="Reset">
     <button type="button" id="reload-btn" onclick="area.reload()">
       Restart
     </button>
