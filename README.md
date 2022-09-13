@@ -17,7 +17,7 @@ appreciate beautiful mathematics.
   - Colors
 
 ## Screen Shot
-  <img src="https://github.com/jamesbaroi/portfolio/blob/master/src/public/img/conways-game-screen-shot.jpg" alt="Conway's Game Screen Shot">
+  <img src="https://github.com/jamesbaroi/images/blob/master/conways-game-screen-shot.jpg" alt="Conway's Game Screen Shot">
 
 ## Set runtime variables
     HOST=your-server-host
