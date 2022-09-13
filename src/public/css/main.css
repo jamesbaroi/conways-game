@@ -274,6 +274,14 @@ input::-moz-color-swatch {
   bottom: 10px;
 }
 
+@media only screen and (min-width: 1000px) {
+  #btns {
+    justify-content: left;
+    position: fixed;
+    left: 10px;
+    bottom: 10px;
+  }
+}
 button, #reset {
   background-color: var(--c2);
   border-left: 0.1px solid var(--c3);
