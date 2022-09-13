@@ -12,11 +12,11 @@ body {
   background-color: var(--c1);
   color: var(--c3);
   display: grid;
+  gap: 10px;
   font-family: monospace;
   font-size: 16px;
   line-height: 16px;
   margin: auto;
-  max-width: 912.17px;
   padding: 10px 10px 65px;
 }
 
@@ -33,42 +33,64 @@ a {
   color: var(--c5);
   font-size: 0.8em;
   font-weight: 600;
+  grid-column: 1;
+  grid-row: 1;
   padding: 0 10px 8px;
   text-align: left;
 }
 
 #grid-container {
+  background-color: var(--c1);
   border: 0.1px solid var(--c2);
-  display: grid;
-  margin: auto;
+  grid-column: 1;
+  grid-row: 2;
+  margin-right: auto;
   max-width: 100%;
   padding: 10px;
 }
 #grid-container canvas {
-  background-color: var(--c1);
-  max-height: 94vh;
+  max-height: 92vh;
   max-width: 100%;
   overflow-x: visible;
 }
 
-#gh {
-  border-bottom: 0.1px solid var(--c2);
-  border-left: 0.1px solid var(--c2);
-  border-right: 0.1px solid var(--c2);
-  color: var(--c2);
-  font-size: 0.6em;
-  line-height: 10px;
-  text-align: center;
+#content {
+  grid-column: 1;
+  grid-row: 3;
+  margin: auto;
+  width: 100%;
 }
 
+@media only screen and (min-width: 1000px) {
+  #title-bar {
+    grid-column: 1/3;
+    grid-row: 1;
+  }
+  #grid-container {
+    grid-column: 2;
+    grid-row: 2;
+  }
+  #content {
+    grid-column: 1;
+    grid-row: 2;
+    margin: 0;
+  }
+}
 /**Information---------------------------------------------------------------*/
 #information {
   display: flex;
+  grid-column: 1;
+  grid-row: 2;
   justify-content: space-between;
   line-height: 10px;
   padding: 0;
 }
 
+@media only screen and (min-width: 1000px) {
+  #information {
+    grid-column: 2;
+  }
+}
 #reference {
   color: var(--c2);
   font-size: 0.6em;
@@ -98,7 +120,6 @@ table {
 
 th, td {
   padding: 8px 10px;
-  width: 25%;
 }
 
 td {
@@ -231,6 +252,18 @@ input::-moz-color-swatch {
   width: 23px;
 }
 
+/**Footer--------------------------------------------------------------------*/
+#gh {
+  background-color: var(--c2);
+  border-bottom: 0.1px solid var(--c2);
+  border-left: 0.1px solid var(--c2);
+  border-right: 0.1px solid var(--c2);
+  color: var(--c3);
+  font-size: 0.6em;
+  margin: auto;
+  text-align: center;
+}
+
 /**Buttons-------------------------------------------------------------------*/
 #btns {
   display: flex;
@@ -277,7 +310,7 @@ body::-webkit-scrollbar {
 /**Hovers--------------------------------------------------------------------*/
 @media (hover: hover) {
   #gh:hover {
-    color: var(--c3);
+    color: var(--c4);
   }
   #reference:hover {
     color: var(--c3);
