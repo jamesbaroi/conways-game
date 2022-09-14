@@ -1,6 +1,5 @@
 # Conway's Game
-Conway's cellular automation game of life. Try out different configurations and
-appreciate beautiful mathematics.
+Conway's cellular automaton. Try out different configurations and appreciate beautiful mathematics.
 
 ## Highlights
 - Real time metrics
