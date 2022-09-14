@@ -48,7 +48,7 @@ a {
   padding: 10px;
 }
 #grid-container canvas {
-  max-height: 92vh;
+  max-height: 90vh;
   max-width: 100%;
   overflow-x: visible;
 }
